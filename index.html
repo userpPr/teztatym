@@ -15,10 +15,33 @@
   <main>
     <section id="menu">
       <h2>Меню</h2>
-      <div class="dish" data-price="120">🥟 Пельмени - 120₽ <button onclick="addToOrder('Пельмени', 120)">+</button></div>
-      <div class="dish" data-price="150">🍔 Бургер - 150₽ <button onclick="addToOrder('Бургер', 150)">+</button></div>
-      <div class="dish" data-price="90">🥗 Салат - 90₽ <button onclick="addToOrder('Салат', 90)">+</button></div>
-      <div class="dish" data-price="60">🍵 Компот - 60₽ <button onclick="addToOrder('Компот', 60)">+</button></div>
+
+      <!-- Столовая -->
+      <div class="category">
+        <h3>🥘 Столовая</h3>
+        <div class="dish">Манты - 130₽ <button onclick="addToOrder('Манты', 130)">+</button></div>
+        <div class="dish">Лагман - 140₽ <button onclick="addToOrder('Лагман', 140)">+</button></div>
+        <div class="dish">Пельмени - 120₽ <button onclick="addToOrder('Пельмени', 120)">+</button></div>
+        <div class="dish">Оромо - 115₽ <button onclick="addToOrder('Оромо', 115)">+</button></div>
+        <div class="dish">Пицца - 160₽ <button onclick="addToOrder('Пицца', 160)">+</button></div>
+      </div>
+
+      <!-- Fast Food -->
+      <div class="category">
+        <h3>🍔 Fast Food</h3>
+        <div class="dish">Гамбургер (курица) - 150₽ <button onclick="addToOrder('Гамбургер (курица)', 150)">+</button></div>
+        <div class="dish">Гамбургер (говядина) - 160₽ <button onclick="addToOrder('Гамбургер (говядина)', 160)">+</button></div>
+        <div class="dish">Шаурма (классика) - 170₽ <button onclick="addToOrder('Шаурма (классика)', 170)">+</button></div>
+        <div class="dish">Шаурма (двойной) - 200₽ <button onclick="addToOrder('Шаурма (двойной)', 200)">+</button></div>
+      </div>
+
+      <!-- Напитки -->
+      <div class="category">
+        <h3>🥤 Напитки</h3>
+        <div class="dish">Чёрный чай - 50₽ <button onclick="addToOrder('Чёрный чай', 50)">+</button></div>
+        <div class="dish">Зелёный чай - 50₽ <button onclick="addToOrder('Зелёный чай', 50)">+</button></div>
+        <div class="dish">Coca-Cola - 80₽ <button onclick="addToOrder('Coca-Cola', 80)">+</button></div>
+      </div>
     </section>
 
     <section id="order">
