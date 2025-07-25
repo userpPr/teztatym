@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FastCantine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍽️ FastCantine: столовая нового поколения</h1>
+    <p>Выбирай блюда и формируй заказ!</p>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Меню</h2>
+      <div class="dish" data-price="120">🥟 Пельмени - 120₽ <button onclick="addToOrder('Пельмени', 120)">+</button></div>
+      <div class="dish" data-price="150">🍔 Бургер - 150₽ <button onclick="addToOrder('Бургер', 150)">+</button></div>
+      <div class="dish" data-price="90">🥗 Салат - 90₽ <button onclick="addToOrder('Салат', 90)">+</button></div>
+      <div class="dish" data-price="60">🍵 Компот - 60₽ <button onclick="addToOrder('Компот', 60)">+</button></div>
+    </section>
+
+    <section id="order">
+      <h2>Ваш заказ:</h2>
+      <ul id="order-list"></ul>
+      <p>💰 Общая сумма: <span id="total">0</span>₽</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Контр — проект для GitHub Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
