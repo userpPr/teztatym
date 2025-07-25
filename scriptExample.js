@@ -6,6 +6,7 @@
 */
 
 //----------------------------------------------------------------
+
 function translateEmojis() {
   const text = document.getElementById("textInput").value;
   const output = document.getElementById("output");
